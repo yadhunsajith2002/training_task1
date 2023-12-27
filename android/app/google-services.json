@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "620830095990",
+    "project_id": "karak-74aa6",
+    "storage_bucket": "karak-74aa6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620830095990:android:1123c53b0a4cd318943d57",
+        "android_client_info": {
+          "package_name": "com.example.training_task1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw7awk459mt8CmQjTQlNQ3B0EuSyv4tD4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
