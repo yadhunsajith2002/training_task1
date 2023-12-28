@@ -1,9 +1,18 @@
-import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
+import 'package:training_task1/view/pages/auth/register_form_last_page.dart';
+import 'package:training_task1/view/pages/auth/register_form_screen.dart';
+import 'package:training_task1/view/pages/auth/signIn_screen.dart';
+import 'package:training_task1/view/pages/auth/signup_first_screen.dart';
+import 'package:training_task1/view/pages/auth/singup_second_screen.dart';
+import 'package:training_task1/view/pages/auth/welcome_screen.dart';
+
 import 'firebase_options.dart';
+
 void main() async {
-   WidgetsFlutterBinding.ensureInitialized();
+  WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+
   runApp(const MyApp());
 }
 
@@ -14,28 +23,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      debugShowCheckedModeBanner: false,
+      home: WelcomeScreen(),
+      routes: {
+        "signinscreen": (context) => SigninScreen(),
+        "signupfirstscreen": (context) => SignUpFirstScreen(),
+        "signupsecondscreen": (context) => SignUpSecondScreen(),
+        "registerformscreen": (context) => RegisterFormScreen(),
+        "registerformlastscreen": (context) => RegisterFormLastPage(),
+      },
     );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(), body: Center(child: Column()));
   }
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="facebook_app_id">259281413834860</string>
+    <string name="fb_login_protocol_scheme">fb259281413834860</string>
+    <string name="facebook_client_token">cae7f47f4f7ebaf0764b5bc45fb1bf7e</string>
+    <string name="app_name">"karak"</string>
+
+</resources>
