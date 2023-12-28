@@ -1,7 +1,7 @@
 // ignore_for_file: must_be_immutable
 
+import 'package:fbsocial/utils/color_const/color_constants.dart';
 import 'package:flutter/material.dart';
-import 'package:training_task1/utils/color_const/color_constants.dart';
 
 class CustomTextField extends StatelessWidget {
   final String hintText;

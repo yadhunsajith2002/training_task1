@@ -7,6 +7,25 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:620830095990:android:77dcc7be66c31fcb943d57",
+        "android_client_info": {
+          "package_name": "com.example.fbsocial"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw7awk459mt8CmQjTQlNQ3B0EuSyv4tD4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:620830095990:android:1123c53b0a4cd318943d57",
         "android_client_info": {
           "package_name": "com.example.training_task1"

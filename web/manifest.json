@@ -1,6 +1,6 @@
 {
-    "name": "training_task1",
-    "short_name": "training_task1",
+    "name": "fbsocial",
+    "short_name": "fbsocial",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

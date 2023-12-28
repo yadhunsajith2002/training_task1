@@ -1,9 +1,9 @@
+import 'package:fbsocial/firebaseservices.dart';
+import 'package:fbsocial/utils/color_const/color_constants.dart';
+import 'package:fbsocial/widgets/customSignUpAppbar.dart';
+import 'package:fbsocial/widgets/custom_login_button.dart';
+import 'package:fbsocial/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
-import 'package:training_task1/firebasefunctions.dart';
-import 'package:training_task1/utils/color_const/color_constants.dart';
-import 'package:training_task1/view/widgets/customSignUpAppbar.dart';
-import 'package:training_task1/view/widgets/custom_login_button.dart';
-import 'package:training_task1/view/widgets/custom_textfield.dart';
 
 class SigninScreen extends StatefulWidget {
   const SigninScreen({super.key});

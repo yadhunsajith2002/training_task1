@@ -17,24 +17,15 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -52,11 +43,39 @@ class DefaultFirebaseOptions {
     }
   }
 
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyA_uOyRNjiE6Za3HrG_ixgkl3_rhsc6IuM',
+    appId: '1:620830095990:web:5edd768702d9bad8943d57',
+    messagingSenderId: '620830095990',
+    projectId: 'karak-74aa6',
+    authDomain: 'karak-74aa6.firebaseapp.com',
+    storageBucket: 'karak-74aa6.appspot.com',
+    measurementId: 'G-TF1820N2CW',
+  );
+
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyDw7awk459mt8CmQjTQlNQ3B0EuSyv4tD4',
-    appId: '1:620830095990:android:1123c53b0a4cd318943d57',
+    appId: '1:620830095990:android:77dcc7be66c31fcb943d57',
     messagingSenderId: '620830095990',
     projectId: 'karak-74aa6',
     storageBucket: 'karak-74aa6.appspot.com',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyDrhoYdjkd8Kx0k0-vAqS-l8edpwG_fpEY',
+    appId: '1:620830095990:ios:5fa0c5fb99d84410943d57',
+    messagingSenderId: '620830095990',
+    projectId: 'karak-74aa6',
+    storageBucket: 'karak-74aa6.appspot.com',
+    iosBundleId: 'com.example.fbsocial',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyDrhoYdjkd8Kx0k0-vAqS-l8edpwG_fpEY',
+    appId: '1:620830095990:ios:c7116828467610c1943d57',
+    messagingSenderId: '620830095990',
+    projectId: 'karak-74aa6',
+    storageBucket: 'karak-74aa6.appspot.com',
+    iosBundleId: 'com.example.fbsocial.RunnerTests',
   );
 }

@@ -1,11 +1,11 @@
 // ignore_for_file: deprecated_member_use
 
+import 'package:fbsocial/utils/color_const/color_constants.dart';
+import 'package:fbsocial/widgets/customSignUpAppbar.dart';
+import 'package:fbsocial/widgets/custom_button.dart';
+import 'package:fbsocial/widgets/custom_text.dart';
+import 'package:fbsocial/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
-import 'package:training_task1/utils/color_const/color_constants.dart';
-import 'package:training_task1/view/widgets/customSignUpAppbar.dart';
-import 'package:training_task1/view/widgets/custom_button.dart';
-import 'package:training_task1/view/widgets/custom_text.dart';
-import 'package:training_task1/view/widgets/custom_textfield.dart';
 
 class SignUpSecondScreen extends StatelessWidget {
   const SignUpSecondScreen({super.key});
