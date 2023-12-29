@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:training_task1/utils/color_const/color_constants.dart';
+import 'package:training_task1/view/pages/travel_request_screen/travel_request_screen.dart';
+import 'package:training_task1/view/widgets/buttons/request_button.dart';
 import 'package:training_task1/view/widgets/custum_home.dart';
 
 class RequestAcceptScreen extends StatelessWidget {
@@ -59,7 +62,7 @@ class RequestAcceptScreen extends StatelessWidget {
                         TextSpan(
                             text: "BMW X8  ",
                             style: TextStyle(
-                                color: Colors.green,
+                                color: customGreen,
                                 fontWeight: FontWeight.bold)),
                         TextSpan(
                             text: "BG 64587 ",
@@ -117,7 +120,7 @@ class RequestAcceptScreen extends StatelessWidget {
               width: double.infinity,
               height: 35,
               decoration: BoxDecoration(
-                  color: Colors.green, borderRadius: BorderRadius.circular(20)),
+                  color: customGreen, borderRadius: BorderRadius.circular(20)),
               child: Center(
                 child: Text(
                   "Submit",
@@ -163,17 +166,17 @@ class RequestAcceptScreen extends StatelessWidget {
                             children: [
                               Icon(
                                 Icons.location_searching_rounded,
-                                color: Colors.green,
+                                color: customGreen,
                                 size: 20,
                               ),
                               Container(
                                 height: 20,
                                 width: 2,
-                                color: Colors.green,
+                                color: customGreen,
                               ),
                               Icon(
                                 Icons.place,
-                                color: Colors.green,
+                                color: customGreen,
                                 size: 20,
                               ),
                             ],
@@ -198,58 +201,10 @@ class RequestAcceptScreen extends StatelessWidget {
                                 SizedBox(
                                   width: 20,
                                 ),
-                                Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    InkWell(
-                                      onTap: () {
-                                        Navigator.of(context)
-                                            .push(MaterialPageRoute(
-                                          builder: (context) {
-                                            return RequestAcceptScreen();
-                                          },
-                                        ));
-                                      },
-                                      child: Container(
-                                        height: 25,
-                                        width: 60,
-                                        decoration: BoxDecoration(
-                                            color: Colors.green,
-                                            borderRadius:
-                                                BorderRadius.circular(15)),
-                                        child: Center(
-                                          child: Text(
-                                            "Accept",
-                                            style: TextStyle(
-                                                fontSize: 12,
-                                                color: Colors.white,
-                                                fontWeight: FontWeight.w400),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 8,
-                                    ),
-                                    Container(
-                                      height: 25,
-                                      width: 60,
-                                      decoration: BoxDecoration(
-                                          color: Colors.black,
-                                          borderRadius:
-                                              BorderRadius.circular(15)),
-                                      child: Center(
-                                        child: Text(
-                                          "Ignore",
-                                          style: TextStyle(
-                                              fontSize: 12,
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.w500),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
+                                CustumRequestButton(
+                                  height: 25,
+                                  width: 60,
+                                )
                               ],
                             ),
                           ],

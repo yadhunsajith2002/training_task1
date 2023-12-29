@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:training_task1/utils/color_const/color_constants.dart';
 import 'package:training_task1/view/pages/profile_screen/profile_screen.dart';
 
 class RewardScreen extends StatelessWidget {
@@ -112,7 +113,7 @@ class RewardScreen extends StatelessWidget {
                               TextSpan(
                                   text: "⭐ 3300 points",
                                   style: TextStyle(
-                                      color: Colors.green,
+                                      color: customGreen,
                                       fontSize: 18,
                                       fontWeight: FontWeight.bold))
                             ],

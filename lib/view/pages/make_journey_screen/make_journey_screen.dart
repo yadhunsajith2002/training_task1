@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
 import 'package:flutter/services.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:training_task1/utils/color_const/color_constants.dart';
 
 class MakeJourney extends StatefulWidget {
   const MakeJourney({Key? key}) : super(key: key);
@@ -125,15 +126,15 @@ class _MakeJourneyState extends State<MakeJourney> {
                             decoration: InputDecoration(
                               hintText: "Leaving from",
                               prefixIcon: Icon(Icons.my_location_rounded,
-                                  color: Colors.green),
+                                  color: customGreen),
                               focusedBorder: OutlineInputBorder(
                                 borderSide:
-                                    BorderSide(color: Colors.green, width: 2),
+                                    BorderSide(color: customGreen, width: 2),
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               enabledBorder: OutlineInputBorder(
                                 borderSide:
-                                    BorderSide(color: Colors.green, width: 2),
+                                    BorderSide(color: customGreen, width: 2),
                                 borderRadius: BorderRadius.circular(20),
                               ),
                             ),
@@ -148,15 +149,15 @@ class _MakeJourneyState extends State<MakeJourney> {
                             decoration: InputDecoration(
                               hintText: "Leaving from",
                               prefixIcon: Icon(Icons.my_location_rounded,
-                                  color: Colors.green),
+                                  color: customGreen),
                               focusedBorder: OutlineInputBorder(
                                 borderSide:
-                                    BorderSide(color: Colors.green, width: 2),
+                                    BorderSide(color: customGreen, width: 2),
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               enabledBorder: OutlineInputBorder(
                                 borderSide:
-                                    BorderSide(color: Colors.green, width: 2),
+                                    BorderSide(color: customGreen, width: 2),
                                 borderRadius: BorderRadius.circular(20),
                               ),
                             ),
@@ -170,7 +171,7 @@ class _MakeJourneyState extends State<MakeJourney> {
                           children: [
                             Icon(
                               Icons.date_range,
-                              color: Colors.green,
+                              color: customGreen,
                             ),
                             Text(
                               "12- jUl - 2023",
@@ -182,7 +183,7 @@ class _MakeJourneyState extends State<MakeJourney> {
                               height: 30,
                               width: 100,
                               decoration: BoxDecoration(
-                                  color: Colors.green,
+                                  color: customGreen,
                                   borderRadius: BorderRadius.circular(15)),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,

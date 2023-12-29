@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:training_task1/utils/color_const/color_constants.dart';
 import 'package:training_task1/view/pages/profile_screen/profile_screen.dart';
 import 'package:training_task1/view/widgets/custum_home.dart';
 
@@ -51,7 +52,7 @@ class HomeScreen extends StatelessWidget {
         children: [
           Container(
             // height: 500,
-            color: Colors.green,
+            color: customGreen,
             width: double.infinity,
             child: Column(
               children: [
@@ -84,7 +85,7 @@ class HomeScreen extends StatelessWidget {
                               TextSpan(
                                   text: "Journey",
                                   style: TextStyle(
-                                      color: Colors.green,
+                                      color: customGreen,
                                       fontSize: 22,
                                       fontWeight: FontWeight.bold))
                             ],
