@@ -2,6 +2,7 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:training_task1/utils/color_const/color_constants.dart';
 
 class LocationScreen extends StatefulWidget {
   const LocationScreen({Key? key}) : super(key: key);
@@ -105,7 +106,7 @@ class _LocationScreenState extends State<LocationScreen> {
                         TextSpan(
                           text: "Location ",
                           style: TextStyle(
-                            color: Colors.green,
+                            color: customGreen,
                             fontSize: 24,
                             fontWeight: FontWeight.bold,
                           ),

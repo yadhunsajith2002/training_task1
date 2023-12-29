@@ -29,9 +29,11 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.2
-  firebase_core: ^2.24.2
+  firebase_auth: ^4.12.1
+  firebase_core: ^2.21.0
   flutter:
     sdk: flutter
+  flutter_facebook_auth: ^6.0.2
   google_maps_flutter: ^2.5.0
   location: ^5.0.3
   provider: ^6.1.1
@@ -57,6 +59,7 @@ flutter:
     - assets/profile1.jpg
     - assets/png/
     - assets/Map-Marker.png
+    - assets/icons/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
